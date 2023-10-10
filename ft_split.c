@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 21:47:05 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/10 00:47:14 by nsalles          ###   ########.fr       */
+/*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
+/*   Updated: 2023/10/11 01:55:29 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,75 +14,75 @@
 
 int	count_words(char const *s, char c)
 {
+	int	i;
 	int	counter;
 
+	i = 0;
 	counter = 0;
-	while (*s)
+	while (s[i])
 	{
-		while ((*s == c) && *s)
-			s++;
-		counter++;
-		while ((*s != c) && *s)
-			s++;
+		while (s[i] == c && s[i])
+			i++;
+		if (s[i])
+			counter++;
+		while (s[i] != c && s[i])
+			i++;
 	}
 	return (counter);
 }
 
-char	*get_word(char const *s, char c)
-{
-	size_t	i;
-	char	*word;
-
-	i = 0;
-	while (s[i] != c && s[i])
-		i++;
-	word = (char *) malloc(sizeof(char) * i + 1);
-	if (!word)
-		return (NULL);
-	i = 0;
-	while (s[i] != c && s[i])
-	{
-		word[i] = s[i];
-		i++;
-	}
-	word[i] = '\0';
-	return (word);
-}
-
 char	**ft_split(char const *s, char c)
 {
-	char	**array;
-	size_t	i;
+	char	**tab;
+	int		wsize;
+	int		i;
 
-	array = (char **) malloc(sizeof(char *) * count_words(s, c) + 1);
-	if (!array)
+	if (!s)
+		return (NULL);
+	tab = (char **) malloc(sizeof(char *) * count_words(s, c) + 1);
+	if (!tab)
 		return (NULL);
 	i = 0;
 	while (*s)
 	{
-		while ((*s == c) && *s)
+		wsize = 0;
+		while (*s == c && *s)
 			s++;
-		if (*s != '\0')
-			array[i] = get_word(s, c);
-		while ((*s != c) && *s)
-			s++;
-		i++;
+		while (s[wsize] != c && s[wsize])
+			wsize++;
+		if (wsize > 0)
+		{
+			tab[i++] = ft_strdup(ft_substr(s, 0, wsize));
+			s += wsize;
+		}
 	}
-	array[i] = NULL;
-	return (array);
+	tab[i] = NULL;
+	return (tab);
 }
 /*
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+
+void	ft_print_result(char const *s)
+{
+	int		len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	write(1, s, len);
+}
+
 int	main(void)
 {
-	char	*s1 = "  tripouille  42  ";
-	char	c = ' ';
-	int		i = 0;
-	char	**tab = ft_split(s1, c);
-
-	while (i < 2)
-	{
-		printf("%s\n", tab[i]);
-		i++;
-	}
-	return (0);
-}*/
+	char	**tabstr;
+	if (!(tabstr = ft_split("", 'z')))
+		ft_print_result("NULL");
+	else
+		if (!tabstr[0])
+			ft_print_result("ok\n");
+		else
+			ft_print_result("con\n");
+}
+*/
