@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/11 01:55:29 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/11 15:34:39 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	count_words(char const *s, char c)
 
 	i = 0;
 	counter = 0;
+	if (!s[0])
+		return (0);
 	while (s[i])
 	{
 		while (s[i] == c && s[i])
@@ -39,7 +41,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	tab = (char **) malloc(sizeof(char *) * count_words(s, c) + 1);
+	tab = (char **) ft_calloc(sizeof(char *), count_words(s, c) + 1);
 	if (!tab)
 		return (NULL);
 	i = 0;
@@ -52,37 +54,10 @@ char	**ft_split(char const *s, char c)
 			wsize++;
 		if (wsize > 0)
 		{
-			tab[i++] = ft_strdup(ft_substr(s, 0, wsize));
+			tab[i++] = ft_substr(s, 0, wsize);
 			s += wsize;
 		}
 	}
 	tab[i] = NULL;
 	return (tab);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-
-void	ft_print_result(char const *s)
-{
-	int		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	write(1, s, len);
-}
-
-int	main(void)
-{
-	char	**tabstr;
-	if (!(tabstr = ft_split("", 'z')))
-		ft_print_result("NULL");
-	else
-		if (!tabstr[0])
-			ft_print_result("ok\n");
-		else
-			ft_print_result("con\n");
-}
-*/
