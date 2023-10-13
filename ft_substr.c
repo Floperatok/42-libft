@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 10:24:56 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/09 21:45:22 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/13 18:06:58 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= ft_strlen(s))
 	{
 		res = (char *) malloc(sizeof(char));
+		if (!res)
+			return (NULL);
 		res[0] = '\0';
 		return (res);
 	}
 	res = (char *) malloc(sizeof(char) * size_res + 1);
 	if (!res)
 		return (NULL);
-	i = 0;
-	while (i < size_res)
-	{
+	i = -1;
+	while (++i < size_res)
 		res[i] = s[start + i];
-		i++;
-	}
 	res[i] = '\0';
 	return (res);
 }

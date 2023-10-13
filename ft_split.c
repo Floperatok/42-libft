@@ -6,13 +6,13 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/11 15:34:39 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/13 18:31:55 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	counter;
@@ -33,6 +33,24 @@ int	count_words(char const *s, char c)
 	return (counter);
 }
 
+static char	**ft_free_split(char **tab, int i)
+{
+	while (i >= 0)
+		free(tab[i--]);
+	free(tab);
+	return (NULL);
+}
+
+static int	get_word_size(char const *s, char c)
+{
+	int	counter;
+
+	counter = 0;
+	while (s[counter] != c && s[counter])
+		counter++;
+	return (counter);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
@@ -47,14 +65,14 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (*s)
 	{
-		wsize = 0;
 		while (*s == c && *s)
 			s++;
-		while (s[wsize] != c && s[wsize])
-			wsize++;
+		wsize = get_word_size(s, c);
 		if (wsize > 0)
 		{
 			tab[i++] = ft_substr(s, 0, wsize);
+			if (!tab[i - 1])
+				return (ft_free_split(tab, i - 1));
 			s += wsize;
 		}
 	}
