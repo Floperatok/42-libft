@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:57:45 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/06 15:03:26 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 07:34:29 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,3 +14,4 @@ int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
+// est-ce un caractère affichable ?

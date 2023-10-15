@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 18:12:22 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/06 19:44:16 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:00:17 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+// compare les n bits suivant l'adresse s1 et s2, retourne
+// la différence ou 0 si égaux

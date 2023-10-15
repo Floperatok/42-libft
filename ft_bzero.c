@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 20:01:15 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/06 21:04:54 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 08:24:14 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ void	ft_bzero(void *s, size_t n)
 	while (i < n)
 		ptrs[i++] = 0;
 }
+// écrit dans les n premiers bit suivant l'adresse s la valeur 0

@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:30:47 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 11:57:08 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:33:18 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,4 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
+// écrit le nombre n dans le fichier fd

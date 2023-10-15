@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 23:43:13 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/07 00:12:30 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 07:55:25 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,5 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (&src[i]);
 }
+// cherche le caractère c dans la chaine de caractère s et renvoi un pointeur
+// vers le premier caractère trouvé, NULL si non trouvé

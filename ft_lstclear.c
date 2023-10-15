@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 16:28:41 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 17:01:18 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:44:50 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	lst = NULL;
 }
+// supprime et free le noeud *lst et tous les noeuds qui le suivent

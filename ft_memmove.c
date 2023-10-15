@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 21:36:50 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/06 22:51:22 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:04:48 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	return (dest);
 }
+// copie les n bits suivant l'adresse src à l'adresse dest  
+// est protégé contre les overlaps

@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 22:54:55 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/07 00:26:48 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 09:55:56 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (&src[i]);
 }
+// cherche dans les n bits suivant l'adresse s le caractère c, retourne un 
+// pointeur vers le caractère trouvé ou NULL si non trouvé

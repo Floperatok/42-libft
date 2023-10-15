@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:18:32 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/12 22:08:04 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 08:15:42 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
+// créé une copie malloc de la chaine de caractère s auquel on a passé tous
+// les caractères à la fonction f

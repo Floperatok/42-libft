@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 15:47:22 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 17:36:32 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:46:52 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	tmp = ft_lstlast(*lst);
 	tmp->next = new;
 }
+// ajoute le noeud new à l'arrière de la liste chainée lst

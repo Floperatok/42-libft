@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 19:54:59 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/07 20:18:29 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 07:54:31 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+// compare les n premiers caractères des chaines de caractère s1 et s2
+// et retourne la différence, 0 si égaux

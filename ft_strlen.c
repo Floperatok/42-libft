@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:14:49 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/06 15:24:04 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:40:54 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,5 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("%ld", ft_strlen(""));
-	return (0);
-}*/
+// retourne la nombre de caractère dans la chaine de caractère s sans compter
+// le \0

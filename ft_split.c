@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 18:31:55 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:23:24 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,3 +79,5 @@ char	**ft_split(char const *s, char c)
 	tab[i] = NULL;
 	return (tab);
 }
+// découpe en fonction du séparateur c la chaine de caractère s en un tableau 
+// de sous chaines de caractères

@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:56:48 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 16:13:15 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 07:49:57 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (dlen + slen);
 }
+// fait une concaténation du string src sur dst, le string ainsi créé aura une
+// taille maximum de size terminé par un \0

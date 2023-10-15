@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:42:54 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 14:39:19 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 08:22:21 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,4 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
+// converti le premier nombre trouvé dans la chaine de caractère nptr en int

@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 10:55:22 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/09 11:09:07 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 08:01:25 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[i] = '\0';
 	return (res);
 }
+// fait une concaténation du string s2 sur s1, le string ainsi créé aura une
+// taille maximum de size terminé par un \0 et sera malloc

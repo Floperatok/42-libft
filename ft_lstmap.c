@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:11:08 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/13 18:40:28 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/15 10:51:21 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (res);
 }
+// créé une copie de la liste chainée lst auquelle on a passé tous
+// les node.content à la fonction f
