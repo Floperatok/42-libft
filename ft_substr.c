@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 10:24:56 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 10:20:15 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:01:56 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[i] = '\0';
 	return (res);
 }
-// malloc et retourne une sous chaine de caractère de la chaine s
-// la sous chaine commence à l'index start et est de taille maximum len

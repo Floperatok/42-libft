@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 21:52:17 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 07:41:17 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:02:04 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// parcourt la chaine de caractère s et applique la fonction f à chacun des
-// pointeurs de ses caractères poru potentiellement les modifier

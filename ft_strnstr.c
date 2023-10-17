@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 21:40:22 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 08:18:58 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:01:59 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if ((!big || !little) && !len)
+		return (NULL);
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *) big);
@@ -33,5 +35,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-// trouve la sous chaine de caractère little dans les len premiers caractères
-// de la chaine big et retourne un pointeur vers la chaine trouvé

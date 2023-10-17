@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 22:33:41 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 10:29:01 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:02:17 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,3 @@ char	*ft_itoa(int n)
 		res[0] = '-';
 	return (res);
 }
-// converti le nombre n en chaine de caractère

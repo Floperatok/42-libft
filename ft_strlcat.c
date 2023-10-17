@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:56:48 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 07:49:57 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:02:02 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dlen;
 	size_t	slen;
 
+	if ((!dst || !src) && !size)
+		return (0);
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	i = dlen;
@@ -34,5 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (dlen + slen);
 }
-// fait une concaténation du string src sur dst, le string ainsi créé aura une
-// taille maximum de size terminé par un \0

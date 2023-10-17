@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:25:25 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 10:08:22 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:02:09 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,3 @@ void	*ft_memset(void *s, int c, size_t n)
 		ptrs[i++] = c;
 	return (s);
 }
-// écrit dans les n premiers bit suivant l'adresse s le caractère c
-// retourne s

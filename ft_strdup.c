@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 22:16:01 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 07:58:58 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:02:04 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strdup(const char *s)
 	d[i] = '\0';
 	return (d);
 }
-// retourne une copie de la chaine de caractère s, la copie à été malloc

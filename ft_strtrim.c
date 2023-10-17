@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 21:31:36 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/15 10:14:31 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/10/17 07:01:57 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res = ft_substr(s1, i, j - i + 1);
 	return (res);
 }
-// retourne une copie malloc de s1 où on a retiré du début et de la fin
-// tous les caractère du charset set
