@@ -6,7 +6,7 @@
 #    By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 13:46:00 by nsalles           #+#    #+#              #
-#    Updated: 2023/10/15 18:55:10 by nsalles          ###   ########.fr        #
+#    Updated: 2023/11/20 20:16:06 by nsalles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,21 +24,32 @@ OBJECTS	=	$(SRCS:.c=.o)
 
 BONUS_OBJECTS	= $(BONUS:.c=.o)
 
-all:		$(NAME)
+all:		$(NAME) bonus
 
 $(NAME):	$(OBJECTS)
-			ar rcs $(NAME) $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
 %.o:	%.c
-		$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
-		rm -f $(OBJECTS) $(BONUS_OBJECTS)
-
-fclean: clean
-		rm -f $(NAME)
-
+	rm -f $(OBJECTS) $(BONUS_OBJECTS)
+	@echo "$(COM_COLOR)clean libft:                 $(OK_COLOR)[✓]$(NO_COLOR)"
+fclean:
+	rm -f $(OBJECTS) $(BONUS_OBJECTS)
+	rm -f $(NAME)
+	@echo "$(COM_COLOR)fclean libft:                $(OK_COLOR)[✓]$(NO_COLOR)"
 re:		fclean all 
 
 bonus:	$(BONUS) $(BONUS_OBJECTS) 
 			ar rcs $(NAME) $(BONUS) $(BONUS_OBJECTS)
 
 .PHONY: clean fclean re all
+
+
+####################################################################
+#                            COLORS                                #
+####################################################################
+
+COM_COLOR   = \033[0;34m
+OK_COLOR    = \033[0;32m
+NO_COLOR    = \033[m
