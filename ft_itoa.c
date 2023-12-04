@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 22:33:41 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:02:17 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/04 10:28:12 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,15 @@ static int	ft_intlen(int a)
 	return (counter);
 }
 
+/*
+ *	Converts an integer value in base-10 into a null-terminated string.
+ *	Memory for the new string is obtained with malloc(3), and can be freed
+ *	with free(3).
+ *	ARGUMENTS:
+ * 		int n	: The value to be converted.
+ *	RETURN VALUE:
+ *		char *	: Converted value null-terminated string.
+*/
 char	*ft_itoa(int n)
 {
 	char	*res;

@@ -6,12 +6,21 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:42:54 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:02:22 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/04 10:25:37 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+ *	Convert the initial portion of the string pointed to by nptr to int.
+ *	Return the converted value as an integer or 0 on error.
+ *	No overflow or underflow are done. Only base-10 input cat be converted.
+ *	ARGUMENTS:
+ *		const char *nptr	: The string to be converted.
+ *	RETURN VALUE:
+ *		int	: converted value or 0 on error.
+*/
 int	ft_atoi(const char *nptr)
 {
 	int	i;

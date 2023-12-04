@@ -6,12 +6,20 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:30:47 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:02:07 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/04 10:31:20 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+ *	Converts in base-10 and writes the number n to the file descriptor fd.
+ *	ARGUMENTS:
+ *		int n	: The number to write.
+ * 		int fd	: The file descriptor.
+ *	RETURN VALUE:
+ *		void	: None.
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

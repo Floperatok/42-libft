@@ -6,12 +6,24 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:18:32 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:02:00 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/04 10:35:40 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+ *	Apply the function pointed by f to each characters of the string 
+ *	pointed by s. The result of the function f is stored in a new string.
+ *	Memory for the new string is obtained with malloc(3), and can be freed with
+ *	free(3).
+ *	ARGUMENTS:
+ *		char consts *s					: The string.
+ *		char (*f)(unsigned int, char)	: The function.
+ *	RETURN VALUE:
+ *		char *	: The new string that has been passed to the function pointed
+ *		by f.
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*res;

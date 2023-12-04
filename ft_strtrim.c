@@ -6,12 +6,25 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 21:31:36 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:01:57 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/03 22:24:02 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+ *	Copies into a new string all the characters of s1 except all the characters
+ *	of set found in the beginning and the end of s1.
+ * 	Ft_strtrim works as follow :
+ *		ft_strtrim("___...,__Hello_world____.__", "_.,") returns "Hello_world".
+ *	Memory of the result is obtained with malloc(3), and can be freed with
+ *	free(3).
+ *	ARGUMENTS:
+ *		char const *s1	: The main string to trim.
+ *		char const *set	: The set of characters to delete.
+ *	RETURN VALUE:
+ *		char *	: The result of the trimmed string.
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*res;

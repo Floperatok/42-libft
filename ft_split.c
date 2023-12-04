@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/17 07:02:06 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/12/04 10:33:26 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,20 @@ static int	get_word_size(char const *s, char c)
 	return (counter);
 }
 
+/*
+ *	Splits the string s according to the delimiter c into an array of strings.
+ *	Each string of the array and the array are null-terminated.
+ *	Memory for the new strings and the array is obtained with malloc(3), and can
+ *	be freed with free(3).
+ * 	ARGUMENT:
+ * 		char const *s	: The string to split.
+ * 		char c			: The delimiter.
+ * 	RETURN VALUE:
+ * 		char **	: Null-terminated array of null-terminated strings
+ * 		Ft_split works as follow: 
+ * 			ft_split("Hello world", ' ') returns {"Hello\0", "world\n", NULL}.
+ * 		Note that the delimiter is not kept in the final result.
+*/
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
