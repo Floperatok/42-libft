@@ -6,7 +6,7 @@
 #    By: nikotine <nikotine@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 13:46:00 by nsalles           #+#    #+#              #
-#    Updated: 2023/12/30 12:54:03 by nikotine         ###   ########.fr        #
+#    Updated: 2023/12/30 13:13:25 by nikotine         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,9 @@ SRCS	=	ft_isalpha.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
 			get_next_line.c \
-			get_next_line_utils.c
+			get_next_line_utils.c \
+			ft_printf.c \
+			ft_printf2.c
 
 OBJECTS	=	$(SRCS:.c=.o)
 
