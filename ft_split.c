@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 22:44:46 by nsalles           #+#    #+#             */
-/*   Updated: 2023/12/04 10:33:26 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/01/22 22:20:45 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ static int	count_words(char const *s, char c)
 
 	i = 0;
 	counter = 0;
-	if (!s[0])
-		return (0);
 	while (s[i])
 	{
 		while (s[i] == c && s[i])
