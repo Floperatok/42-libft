@@ -25,7 +25,7 @@ gcc libft.a your_project.c
 ## 📚 Functions list
 | Libc functions  | Prototype                                                                                              |
 |----------------|---------------------|
-| [ft_atoi](src/ft_atoi.c) | `int ft_atoi(const char *nptr);` |
+| [ft_atoi](src/ft_atoi.c) | `int ft_atoi(const char *nptr)` |
 | [ft_bzero](src/ft_bzero.c) | `void ft_bzero(void *s, size_t n)` |
 | [ft_calloc](src/ft_calloc.c) | `void *ft_calloc(size_t nmemb, size_t size)` |
 | [ft_isalnum](src/ft_isalnum.c) | `int ft_isalnum(int c)` |
@@ -52,7 +52,7 @@ gcc libft.a your_project.c
 
 | Additional functions    | Prototype        | 
 |------------------|---------------------|
-| [ft_itoa](src/ft_itoa.c) | `char *ft_itoa(int n);` |
+| [ft_itoa](src/ft_itoa.c) | `char *ft_itoa(int n)` |
 | [ft_putchar_fd](src/ft_putchar_fd.c) | `void ft_putchar_fd(char c, int fd)` |
 | [ft_putendl_fd](src/ft_putendl_fd.c) | `void ft_putendl_fd(char *s, int fd)` |
 | [ft_putnbr_fd](src/ft_putnbr_fd.c) | `void ft_putnbr_fd(int n, int fd)` |
@@ -73,7 +73,7 @@ gcc libft.a your_project.c
 | [ft_lstdelone](src/ft_lstdelone.c) | `void ft_lstdelone(t_list *lst, void (*del)(void *))` |
 | [ft_lstiter](src/ft_lstiter.c) | `void ft_lstiter(t_list *lst, void (*f)(void *))`|
 | [ft_lstlast](src/ft_lstlast.c) | `t_list	*ft_lstlast(t_list *lst)` |
-| [ft_lstmap](src/ft_lstmap.c) | `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));` |
+| [ft_lstmap](src/ft_lstmap.c) | `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))` |
 | [ft_lstnew](src/ft_lstnew.c) | `t_list *ft_lstnew(void *content)` | 
 | [ft_lstsize](src/ft_lstsize.c) | `int	ft_lstsize(t_list *lst)` |
 
