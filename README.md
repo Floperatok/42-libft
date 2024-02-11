@@ -67,14 +67,14 @@ gcc libft.a your_project.c
 
 | Linked list - Bonus functions    | Prototype      |
 |------------------|---------------------|
-| [ft_lstadd_back](src/ft_lstadd_back.c) | `void	ft_lstadd_back(t_list **lst, t_list *new)` |
-| [ft_lstadd_front](src/ft_lstadd_front.c) | `void	ft_lstadd_front(t_list **lst, t_list *new)` |
-| [ft_lstclear](src/ft_lstclear.c) | `void	ft_lstclear(t_list **lst, void (*del)(void *))` |
-| [ft_lstdelone](src/ft_lstdelone.c) | `void	ft_lstdelone(t_list *lst, void (*del)(void *))` |
-| [ft_lstiter](src/ft_lstiter.c) | `void	ft_lstiter(t_list *lst, void (*f)(void *))`|
+| [ft_lstadd_back](src/ft_lstadd_back.c) | `void ft_lstadd_back(t_list **lst, t_list *new)` |
+| [ft_lstadd_front](src/ft_lstadd_front.c) | `void ft_lstadd_front(t_list **lst, t_list *new)` |
+| [ft_lstclear](src/ft_lstclear.c) | `void ft_lstclear(t_list **lst, void (*del)(void *))` |
+| [ft_lstdelone](src/ft_lstdelone.c) | `void ft_lstdelone(t_list *lst, void (*del)(void *))` |
+| [ft_lstiter](src/ft_lstiter.c) | `void ft_lstiter(t_list *lst, void (*f)(void *))`|
 | [ft_lstlast](src/ft_lstlast.c) | `t_list	*ft_lstlast(t_list *lst)` |
-| [ft_lstmap](src/src/ft_lstmap.c) | `t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));` |
-| [ft_lstnew](src/ft_lstnew.c) | `t_list	*ft_lstnew(void *content)` | 
+| [ft_lstmap](src/ft_lstmap.c) | `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));` |
+| [ft_lstnew](src/ft_lstnew.c) | `t_list *ft_lstnew(void *content)` | 
 | [ft_lstsize](src/ft_lstsize.c) | `int	ft_lstsize(t_list *lst)` |
 
 | Personal functions | Prototype        |
