@@ -79,6 +79,6 @@ gcc libft.a your_project.c
 
 | Personal functions | Prototype        |
 |-|-|
-| [get_next_line](src/get_next_line/get_next_line.c) | `char *get_next_line(int fd)` |
-| [ft_printf](src/ft_printf/ft_printf.c) | `int ft_printf(const char *str, ...)` |
+| [get_next_line](https://github.com/Floperatok/42-get_next_line) | `char *get_next_line(int fd)` |
+| [ft_printf](https://github.com/Floperatok/42-ft_printf) | `int ft_printf(const char *str, ...)` |
 
