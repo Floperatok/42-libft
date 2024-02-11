@@ -1,3 +1,4 @@
+# <div align="center">⚙️ libft (a [42](https://42perpignan.fr/) project) ⚙️</div>
 ## 📑 Introduction
 The `libft` ('lib' stands for *library* and 'ft' for *forty-two*) is the very first project in the 42 cursus. The goal of this project is to recreate some of the standard GNU Libc functions, plus a few other miscellaneous ones for a grand total of 46 functions, each in their respective dot c file. This will enable us to reuse these functions afterwards on our other 42 projects, since standard C library such as `string.h` are not allowed.\
 This project is crucial in the learning process of the C language, as many of the functions are easy and perfect for beginners.\
@@ -14,7 +15,7 @@ git clone https://github.com/Floperatok/42-libft && cd 42-libft
 ```
 Compile the project :
 ```sh
-make
+make && make clean
 ```
 You can now use my libft on all your projects using the `libft.a` file :
 ```sh
@@ -22,7 +23,7 @@ gcc libft.a your_project.c
 ```
 
 ## 📚 Functions list
-| Libc functions  | Prototype        |
+| Libc functions  | Prototype                                                                                              |
 |----------------|---------------------|
 | [ft_atoi](src/ft_atoi.c) | `int ft_atoi(const char *nptr);` |
 | [ft_bzero](src/ft_bzero.c) | `void ft_bzero(void *s, size_t n)` |
