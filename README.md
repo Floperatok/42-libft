@@ -4,7 +4,7 @@ The `libft` ('lib' stands for *library* and 'ft' for *forty-two*) is the very fi
 This project is crucial in the learning process of the C language, as many of the functions are easy and perfect for beginners.\
 The goal of this project is not to reinvent the wheel, but to gain a better understanding of how all the basic functions works, how many computing power they use and memory space they require.
 
-Subject : <a href=../asset/en.subject.pdf>en.libft_subject.pdf<a/>
+Subject : <a href=asset/en.subject.pdf>en.libft_subject.pdf<a/>
 ### My grade
 [![nsalles's 42 Libft Score](https://badge42.coday.fr/api/v2/clshyl91d071301p436jjiyqr/project/3344498)](https://github.com/Coday-meric/badge42)
 
