@@ -6,7 +6,7 @@
 #    By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 13:46:00 by nsalles           #+#    #+#              #
-#    Updated: 2024/02/12 01:48:49 by nsalles          ###   ########.fr        #
+#    Updated: 2024/02/12 01:52:05 by nsalles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,9 +77,9 @@ $(OBJ_PATH)%.o:	$(SRC_PATH)%.c
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 clean:
-	rm -f $(OBJ)
+	rm -rf $(OBJ_PATH)
 fclean:
-	rm -f $(OBJ)
+	rm -rf $(OBJ_PATH)
 	rm -f $(NAME)
 re:		fclean all 
 
