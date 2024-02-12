@@ -9,7 +9,7 @@ Subject : <a href=asset/en.subject.pdf>en.libft_subject.pdf<a/>
 [![nsalles's 42 Libft Score](https://badge42.coday.fr/api/v2/clshyl91d071301p436jjiyqr/project/3344498)](https://github.com/Coday-meric/badge42)
 
 ## Usage
-Download libft and enter the repo :
+Download `libft` and enter the repo :
 ```sh
 git clone https://github.com/Floperatok/42-libft && cd 42-libft
 ```
@@ -17,7 +17,7 @@ Compile the project :
 ```sh
 make && make clean
 ```
-You can now use my libft on all your projects using the `libft.a` file :
+You can now use my `libft` on all your projects using the `libft.a` file :
 ```sh
 gcc libft.a your_project.c
 ```
