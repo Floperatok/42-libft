@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:45:25 by nsalles           #+#    #+#             */
-/*   Updated: 2024/03/22 23:41:19 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/03/22 23:55:27 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
+# include "../../includes/libft.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1

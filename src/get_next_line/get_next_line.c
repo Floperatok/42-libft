@@ -6,7 +6,7 @@
 /*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:48:58 by nsalles           #+#    #+#             */
-/*   Updated: 2024/03/22 23:25:28 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/03/22 23:55:43 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,7 @@ char	*read_file(int fd, char *stash)
 			return (NULL);
 		}
 		buf[readed] = '\0';
-		stash = ft_strjoin(stash, buf);
+		stash = gnl_strjoin(stash, buf);
 		nl_index = found_newline(buf);
 	}
 	free(buf);
