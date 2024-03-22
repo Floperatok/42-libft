@@ -6,57 +6,11 @@
 /*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:21:14 by nsalles           #+#    #+#             */
-/*   Updated: 2024/02/12 03:47:51 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/03/22 23:41:38 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-/*
- *	Calculates the length of the string pointed to by s, excluding the
- *	terminating null byte '\0'.
- * 	ARGUMENTS:
- * 		const char *s	: The string to calcultate the length from.
- * 	RETURN VALUE:
- * 		size_t	: Number of byte in the string pointed to by s as a size_t.
-*/
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-/*
- *	Returns a pointer to a new string which is a duplicate of the string.
- *	Memory for the new string is obtained with malloc(3), and can be freed with
- * 	free(3).
- * 	ARGUMENTS:
- * 		const char *s	: The string to copie.
- * 	RETURN VALUE:
- * 		char *	: On success, this function returns a pointer to the duplicated
- * 		string. It returns NULL if insufficient memory was available.
-*/
-char	*ft_strdup(char *s)
-{
-	char	*d;
-	int		i;
-
-	d = malloc(ft_strlen(s) * sizeof(char) + 1);
-	if (d == NULL)
-		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		d[i] = s[i];
-		i++;
-	}
-	d[i] = '\0';
-	return (d);
-}
 
 /*
  *	Combines the string s1 and the string s2 together into one string.
@@ -71,7 +25,7 @@ char	*ft_strdup(char *s)
 		char *	: The first and the second string joined together.
 	IMPORTANT NOTE : in this specific strjoin, s1 is freed.
 */
-char	*ft_strjoin(char *s1, char *s2)
+char	*gnl_strjoin(char *s1, char *s2)
 {
 	char	*res;
 	size_t	lens1;

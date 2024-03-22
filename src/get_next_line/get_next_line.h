@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsalles <nsalles@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:45:25 by nsalles           #+#    #+#             */
-/*   Updated: 2023/10/20 17:19:44 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/03/22 23:41:19 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@
 #  define BUFFER_SIZE 1
 # endif
 
-int		ft_strlen(char *str);
-char	*ft_strdup(char *s);
-char	*ft_strjoin(char *s1, char *s2);
+char	*gnl_strjoin(char *s1, char *s2);
 int		found_newline(char *buf);
 char	*clean_stash(char *stash);
 char	*extract_line(char *stash);
