@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsalles <nsalles@student.42perpignan.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:48:58 by nsalles           #+#    #+#             */
-/*   Updated: 2024/02/12 03:45:19 by nsalles          ###   ########.fr       */
+/*   Updated: 2024/02/12 03:49:06 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 /*
  *	Search in buf for a '\n' and returns the position of the first one
@@ -22,7 +22,7 @@ int	found_newline(char *buf)
 
 	i = -1;
 	if (!buf)
-		return (-1);
+		return (i);
 	while (buf[++i])
 	{
 		if (buf[i] == '\n')
@@ -133,21 +133,20 @@ char	*read_file(int fd, char *stash)
  *	Reads BUFFER_SIZE bytes at the time.
  *	Returns the readed line that can be freed, returns NULL if no line is found,
  * 	if the file descriptor is negative or in case of errors.
- * 	Can only be used on one file at the time.
 */
 char	*get_next_line(int fd)
 {
-	static char	*stash;
+	static char	*stash[4096];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	if (!stash)
-		stash = ft_strdup("");
-	stash = read_file(fd, stash);
-	if (!stash)
+	if (!stash[fd])
+		stash[fd] = ft_strdup("");
+	stash[fd] = read_file(fd, stash[fd]);
+	if (!stash[fd])
 		return (NULL);
-	line = extract_line(stash);
-	stash = clean_stash(stash);
+	line = extract_line(stash[fd]);
+	stash[fd] = clean_stash(stash[fd]);
 	return (line);
 }
